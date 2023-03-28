@@ -2,12 +2,12 @@ import "./App.css";
 
 import React from "react";
 
-import RedCircle from "./components/ShapeTool";
+import ShapeTool from "./components/ShapeTool";
 
 function App() {
   return (
     <div className="App">
-      <RedCircle size={100} />
+      <ShapeTool />
     </div>
   );
 }

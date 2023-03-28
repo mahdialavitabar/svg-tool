@@ -5,11 +5,9 @@ import { saveAs } from "file-saver";
 import Slider from "rc-slider";
 import React, { useState } from "react";
 
-interface Props {
-  size: number;
-}
+interface Props {}
 
-const ShapeTool: React.FC<Props> = ({ size }) => {
+const ShapeTool: React.FC<Props> = () => {
   const [color, setColor] = useState<string>("red");
   const [borderRadius, setBorderRadius] = useState<number>(20);
   const [rotation, setRotation] = useState<number>(20);
