@@ -47,7 +47,7 @@
 
 .control input[type="color"]::-webkit-color-swatch {
   border: none;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .slider {

@@ -66,7 +66,9 @@ const RedCircle: React.FC<Props> = ({ size }) => {
 
   return (
     <div className={"container"}>
+      <p>SVG Creator Tool by Mahdi Alavitabar</p>
       <div className={"circle"} style={circleStyle}></div>
+
       <div className={"controls"}>
         <div className={"control"}>
           <label htmlFor="color-input">Color:</label>
