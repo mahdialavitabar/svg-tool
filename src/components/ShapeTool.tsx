@@ -9,7 +9,7 @@ interface Props {
   size: number;
 }
 
-const RedCircle: React.FC<Props> = ({ size }) => {
+const ShapeTool: React.FC<Props> = ({ size }) => {
   const [color, setColor] = useState<string>("red");
   const [borderRadius, setBorderRadius] = useState<number>(20);
   const [rotation, setRotation] = useState<number>(20);
@@ -123,4 +123,4 @@ const RedCircle: React.FC<Props> = ({ size }) => {
   );
 };
 
-export default RedCircle;
+export default ShapeTool;
