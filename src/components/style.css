@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask5086%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient5087)'%3e%3c/rect%3e%3cpath d='M839.1684453150218 87.5729627258296L722.3138073787404-25.272249413382156 609.4685952395287 91.58238852289925 726.3232331758101 204.427600662111z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1480.145%2c213.199C1531.438%2c215.72%2c1577.498%2c180.678%2c1600.655%2c134.84C1621.816%2c92.954%2c1608.135%2c45.541%2c1585.654%2c4.348C1561.883%2c-39.208%2c1529.673%2c-82.961%2c1480.145%2c-85.974C1426.338%2c-89.247%2c1373.267%2c-58.522%2c1349.78%2c-10.002C1328.457%2c34.047%2c1353.857%2c81.667%2c1378.539%2c123.926C1402.909%2c165.651%2c1431.882%2c210.827%2c1480.145%2c213.199' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M713.90575965272 164.98362563346987L687.0528693692443 215.486567060644 776.2337266517434 230.5144317722705z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M427.936%2c219.133C455.709%2c219.437%2c481.463%2c204.419%2c495.31%2c180.342C509.116%2c156.335%2c508.783%2c126.745%2c494.823%2c102.827C480.976%2c79.102%2c455.343%2c63.047%2c427.936%2c64.903C402.955%2c66.594%2c387.475%2c89.173%2c375.091%2c110.934C362.895%2c132.365%2c352.246%2c156.739%2c363.067%2c178.896C375.036%2c203.401%2c400.666%2c218.835%2c427.936%2c219.133' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M628.438891735573 510.97299143626674L734.8132692702978 482.47006288047385 706.310340714505 376.095685345749 599.9359631797801 404.5986139015419z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M840.8162771214163 549.651952648256L921.0631236208517 551.0526665641884 883.0407712450325 429.9820398570691z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M833.66 127.9 a176.66 176.66 0 1 0 353.32 0 a176.66 176.66 0 1 0 -353.32 0z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1479.2344677830213 230.77127474657448L1409.922293863837 128.01175105122508 1307.1627701684874 197.3239249704094 1376.474944087672 300.0834486657588z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1322.3172909111686 120.44267436521446L1374.7344720909646 264.45769604816593 1466.3323125941201 68.02549318541841z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M567.8020831078493 487.95992101850493L634.3397844047523 345.2693601124985 491.64922349874587 278.73165881559544 425.11152220184283 421.4222197216019z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1120.97 40.93 a134.54 134.54 0 1 0 269.08 0 a134.54 134.54 0 1 0 -269.08 0z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M718.21 152.22 a104.15 104.15 0 1 0 208.3 0 a104.15 104.15 0 1 0 -208.3 0z' fill='rgba(56%2c 255%2c 0%2c 0.47)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask5086'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient5087'%3e%3cstop stop-color='rgba(254%2c 254%2c 254%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(254%2c 254%2c 254%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.circle {
+  background-color: var(--circle-color, red);
+  border-radius: var(--circle-border-radius, 20%);
+  width: var(--circle-width, 100px);
+  height: var(--circle-height, 100px);
+  transform: rotate(var(--circle-rotation, 20deg));
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.control label {
+  margin-right: 1rem;
+}
+
+.control input[type="color"] {
+  height: 1.5rem;
+  width: 3rem;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.control input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.control input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.slider {
+  width: 15rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dcdcdc;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.slider-handle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #000000;
+  transform: translate(-0.5rem, -0.5rem);
+  cursor: pointer;
+}
+
+.slider-track {
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--slider-track-color, #000000);
+}
+
+.slider-handle:focus {
+  outline: none;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--button-background-color, #000000);
+  color: var(--button-color, #ffffff);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}

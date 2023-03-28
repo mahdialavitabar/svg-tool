@@ -15,9 +15,11 @@
     "konva": "^8.4.3",
     "rc-slider": "^10.1.1",
     "react": "^18.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "react-konva": "^18.2.5",
     "react-scripts": "5.0.1",
+    "save-svg-as-png": "^1.4.17",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -47,6 +49,7 @@
   },
   "devDependencies": {
     "@types/fabric": "^5.3.0",
-    "@types/file-saver": "^2.0.5"
+    "@types/file-saver": "^2.0.5",
+    "@types/react-color": "^3.0.6"
   }
 }
