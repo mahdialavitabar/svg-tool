@@ -71,11 +71,15 @@ const ShapeTool: React.FC<Props> = () => {
   };
 
   const handleDownloadSVG = () => {
-    const svgString = `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg"><g transform="rotate(${rotation} ${
+    const svgString = `<svg viewBox="${xOffset - blurRadius} ${
+      yOffset - blurRadius
+    } ${width + blurRadius * 2} ${
+      height + blurRadius * 2
+    }" xmlns="http://www.w3.org/2000/svg"><defs><filter id="shadow"><feDropShadow dx="${xOffset}" dy="${yOffset}" stdDeviation="${blurRadius}" flood-color="${shadowColor}" /></filter></defs><g transform="rotate(${rotation} ${
       width / 2
     } ${
       height / 2
-    })"><rect x="0" y="0" width="${width}" height="${height}" fill="${color}" rx="${borderRadius}" ry="${borderRadius}"/></g></svg>`;
+    })"><rect x="0" y="0" width="${width}" height="${height}" fill="${color}" rx="${borderRadius}" ry="${borderRadius}" filter="url(#shadow)" /></g></svg>`;
     const svgBlob = new Blob([svgString], {
       type: "image/svg+xml;charset=utf-8",
     });
