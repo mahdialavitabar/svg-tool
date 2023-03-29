@@ -85,7 +85,17 @@ const ShapeTool: React.FC<Props> = () => {
   return (
     <div className={"container"}>
       <p>SVG Creator Tool by Mahdi Alavitabar</p>
-      <div className={"circle"} style={circleStyle}></div>
+      <div
+        style={{
+          width: "20%",
+          height: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className={"circle"} style={circleStyle}></div>
+      </div>
 
       <div className={"controls"}>
         <div className={"control"}>
@@ -134,7 +144,7 @@ const ShapeTool: React.FC<Props> = () => {
           />
         </div>
         <div className={"control"}>
-          <label htmlFor="shadow-x-offset-slider">X Offset:</label>
+          <label htmlFor="shadow-x-offset-slider">Shadow X Offset:</label>
           <Slider
             value={xOffset}
             min={-50}
@@ -143,7 +153,7 @@ const ShapeTool: React.FC<Props> = () => {
           />
         </div>
         <div className={"control"}>
-          <label htmlFor="shadow-y-offset-slider">Y Offset:</label>
+          <label htmlFor="shadow-y-offset-slider">Shadow Y Offset:</label>
           <Slider
             value={yOffset}
             min={-50}
@@ -152,7 +162,7 @@ const ShapeTool: React.FC<Props> = () => {
           />
         </div>
         <div className={"control"}>
-          <label htmlFor="shadow-blur-radius-slider">Blur Radius:</label>
+          <label htmlFor="shadow-blur-radius-slider">Shadow Blur Radius:</label>
           <Slider
             value={blurRadius}
             min={0}
@@ -161,7 +171,7 @@ const ShapeTool: React.FC<Props> = () => {
           />
         </div>
         <div className={"control"}>
-          <label htmlFor="shadow-color-input">Color:</label>
+          <label htmlFor="shadow-color-input">Shadow Color:</label>
           <input
             id="shadow-color-input"
             type="color"
