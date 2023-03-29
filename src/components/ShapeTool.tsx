@@ -13,12 +13,16 @@ const ShapeTool: React.FC<Props> = () => {
   const [rotation, setRotation] = useState<number>(20);
   const [height, setHeight] = useState<number>(100);
   const [width, setWidth] = useState<number>(100);
-
+  const [xOffset, setXOffset] = useState<number>(0);
+  const [yOffset, setYOffset] = useState<number>(0);
+  const [blurRadius, setBlurRadius] = useState<number>(0);
+  const [shadowColor, setShadowColor] = useState<string>("#000");
   const circleStyle: React.CSSProperties = {
     backgroundColor: color,
     borderRadius: `${borderRadius}%`,
     width: width,
     height: height,
+    boxShadow: `${xOffset}px ${yOffset}px ${blurRadius}px ${shadowColor}`,
     transform: `rotate(${rotation}deg)`,
   };
 
@@ -47,6 +51,22 @@ const ShapeTool: React.FC<Props> = () => {
   const handleWidthChange = (value: number | number[]) => {
     if (typeof value === "number") {
       setWidth(value);
+    }
+  };
+
+  const handleShadowXOffsetChange = (value: number | number[]) => {
+    if (typeof value === "number") {
+      setXOffset(value);
+    }
+  };
+  const handleShadowYOffsetChange = (value: number | number[]) => {
+    if (typeof value === "number") {
+      setYOffset(value);
+    }
+  };
+  const handleShadowBlurRadiusChange = (value: number | number[]) => {
+    if (typeof value === "number") {
+      setBlurRadius(value);
     }
   };
 
@@ -111,6 +131,42 @@ const ShapeTool: React.FC<Props> = () => {
             min={50}
             max={500}
             onChange={handleWidthChange}
+          />
+        </div>
+        <div className={"control"}>
+          <label htmlFor="shadow-x-offset-slider">X Offset:</label>
+          <Slider
+            value={xOffset}
+            min={-50}
+            max={50}
+            onChange={handleShadowXOffsetChange}
+          />
+        </div>
+        <div className={"control"}>
+          <label htmlFor="shadow-y-offset-slider">Y Offset:</label>
+          <Slider
+            value={yOffset}
+            min={-50}
+            max={50}
+            onChange={handleShadowYOffsetChange}
+          />
+        </div>
+        <div className={"control"}>
+          <label htmlFor="shadow-blur-radius-slider">Blur Radius:</label>
+          <Slider
+            value={blurRadius}
+            min={0}
+            max={50}
+            onChange={handleShadowBlurRadiusChange}
+          />
+        </div>
+        <div className={"control"}>
+          <label htmlFor="shadow-color-input">Color:</label>
+          <input
+            id="shadow-color-input"
+            type="color"
+            value={shadowColor}
+            onChange={(event) => setShadowColor(event.target.value)}
           />
         </div>
         <button className={"button"} onClick={handleDownloadSVG}>
